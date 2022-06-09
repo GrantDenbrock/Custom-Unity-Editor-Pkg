@@ -51,11 +51,15 @@ public class QuickTool : EditorWindow
     var iconPath = "P:/dd-pipeline/Icons/";
     
     string [] files = System.IO.Directory.GetFiles(iconPath);
-     foreach (string file in files)
-     {
-          //Do work on the files here
-          Debug.Log(file);
-     }
+    WWW www = new WWW("file://" + files[0]);
+    yield return www;
+    Texture2D new_texture = new new Texture2D(512,512); 
+    www.LoadImageIntoTexture(new_texture);
+    
+//     foreach (string file in files){
+//           //Do work on the files here
+//           Debug.Log(file);
+//     }
     
 //     string[] filePaths = Directory.GetFiles(@"P:\dd-pipeline\Icons\", "*.png"); // get every file in chosen directory with the extension.png
     // write those files out so I can see them
@@ -68,16 +72,16 @@ public class QuickTool : EditorWindow
        
 
     // Loads the actual asset from the above path.
-    //var iconAsset = Resources.Load<Texture2D>(iconPath);
+    var iconAsset = Resources.Load<Texture2D>(newTexture);
 
     // Applies the above asset as a background image for the icon.
-//     buttonIcon.style.backgroundImage = iconAsset;
+    buttonIcon.style.backgroundImage = iconAsset;
 
-//     // Instantiates our primitive object on a left click.
-//     button.RegisterCallback<PointerUpEvent, string>(CreateObject, button.parent.name);
+    // Instantiates our primitive object on a left click.
+    button.RegisterCallback<PointerUpEvent, string>(CreateObject, button.parent.name);
 
-//     // Sets a basic tooltip to the button itself.
-//     button.tooltip = button.parent.name;
+    // Sets a basic tooltip to the button itself.
+    button.tooltip = button.parent.name;
     }
 
     private void CreateObject(PointerUpEvent _, string primitiveTypeName) {   
