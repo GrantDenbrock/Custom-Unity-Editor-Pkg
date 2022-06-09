@@ -56,7 +56,7 @@ public class QuickTool : EditorWindow
     yield return www;                                                               // Wait unill its loaded
     Texture2D new_texture = new Texture2D(512,512);               // create a new Texture2D (you could use a gloabaly defined array of Texture2D )
     www.LoadImageIntoTexture(new_texture);                           // put the downloaded image file into the new Texture2D
-    var iconAsset = this.renderer.material.mainTexture = new_texture;           // put the new image into the current material as defuse material for testing.
+    var iconAsset = new_texture;           // put the new image into the current material as defuse material for testing.
        
 
     // Loads the actual asset from the above path.
