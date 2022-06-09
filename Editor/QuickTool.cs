@@ -50,7 +50,7 @@ public class QuickTool : EditorWindow
     // var iconPath = "Icons/" + button.parent.name + "_icon";
     var iconPath = "P:/dd-pipeline/Icons/viola_icon";
     
-    string[] filePaths = Directory.GetFiles(@"P:/dd-pipeline/Icons/", "*.png"); // get every file in chosen directory with the extension.png
+    string[] filePaths = Directory.GetFiles(@"P:\dd-pipeline\Icons\", "*.png"); // get every file in chosen directory with the extension.png
     // write those files out so I can see them
     Debug.Log(filePaths);
 //     WWW www = new WWW("file://" + filePaths[0]);                  // "download" the first file from disk
