@@ -63,13 +63,13 @@ public class QuickTool : EditorWindow
     //var iconAsset = Resources.Load<Texture2D>(iconPath);
 
     // Applies the above asset as a background image for the icon.
-    buttonIcon.style.backgroundImage = iconAsset;
+//     buttonIcon.style.backgroundImage = iconAsset;
 
-    // Instantiates our primitive object on a left click.
-    button.RegisterCallback<PointerUpEvent, string>(CreateObject, button.parent.name);
+//     // Instantiates our primitive object on a left click.
+//     button.RegisterCallback<PointerUpEvent, string>(CreateObject, button.parent.name);
 
-    // Sets a basic tooltip to the button itself.
-    button.tooltip = button.parent.name;
+//     // Sets a basic tooltip to the button itself.
+//     button.tooltip = button.parent.name;
     }
 
     private void CreateObject(PointerUpEvent _, string primitiveTypeName) {   
