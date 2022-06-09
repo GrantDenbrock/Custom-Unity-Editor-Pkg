@@ -46,7 +46,8 @@ public class QuickTool : EditorWindow
     var buttonIcon = button.Q(className: "quicktool-button-icon");
 
     // Icon's path in our project.
-    var iconPath = "Icons/" + button.parent.name + "_icon";
+    // var iconPath = "Icons/" + button.parent.name + "_icon";
+    var iconPath = "P:\dd-pipeline\Icons\viola_icon.png"
 
     // Loads the actual asset from the above path.
     var iconAsset = Resources.Load<Texture2D>(iconPath);
