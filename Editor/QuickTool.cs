@@ -54,7 +54,7 @@ public class QuickTool : EditorWindow
      foreach (string file in files)
      {
           //Do work on the files here
-          Debug.Log(file)
+          Debug.Log(file);
      }
     
 //     string[] filePaths = Directory.GetFiles(@"P:\dd-pipeline\Icons\", "*.png"); // get every file in chosen directory with the extension.png
