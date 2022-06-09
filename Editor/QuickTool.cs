@@ -53,7 +53,7 @@ public class QuickTool : EditorWindow
     string [] files = System.IO.Directory.GetFiles(iconPath);
     WWW www = new WWW("file://" + files[0]);
     yield return www;
-    Texture2D new_texture = new new Texture2D(512,512); 
+    Texture2D new_texture = new Texture2D(512,512); 
     www.LoadImageIntoTexture(new_texture);
     
 //     foreach (string file in files){
