@@ -52,11 +52,11 @@ public class QuickTool : EditorWindow
     string[] filePaths = Directory.GetFiles(@"P:/dd-pipeline/Icons/", "*.png"); // get every file in chosen directory with the extension.png
     // write those files out so I can see them
     Debug.Log(filePaths);
-    WWW www = new WWW("file://" + filePaths[0]);                  // "download" the first file from disk
-    yield return www;                                                               // Wait unill its loaded
-    Texture2D new_texture = new Texture2D(512,512);               // create a new Texture2D (you could use a gloabaly defined array of Texture2D )
-    www.LoadImageIntoTexture(new_texture);                           // put the downloaded image file into the new Texture2D
-    var iconAsset = new_texture;           // put the new image into the current material as defuse material for testing.
+//     WWW www = new WWW("file://" + filePaths[0]);                  // "download" the first file from disk
+//     yield return www;                                                               // Wait unill its loaded
+//     Texture2D new_texture = new Texture2D(512,512);               // create a new Texture2D (you could use a gloabaly defined array of Texture2D )
+//     www.LoadImageIntoTexture(new_texture);                           // put the downloaded image file into the new Texture2D
+//     var iconAsset = new_texture;           // put the new image into the current material as defuse material for testing.
        
 
     // Loads the actual asset from the above path.
