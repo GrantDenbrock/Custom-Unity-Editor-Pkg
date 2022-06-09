@@ -1,0 +1,6 @@
+{
+    "name": "com.soulmachines.quicktool",
+    "version": "1.0.0",
+    "displayName": "Quick Tool",
+    "description": "This is an example package of a custom editor window that can drop a primitive onto a scene."
+}
