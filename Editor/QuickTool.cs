@@ -51,15 +51,14 @@ public class QuickTool : EditorWindow
     var iconPath = "P:/dd-pipeline/Icons/";
     
     string [] files = System.IO.Directory.GetFiles(iconPath);
-    WWW www = new WWW("file://" + files[0]);
-    yield return www;
-    Texture2D new_texture = new Texture2D(512,512); 
-    www.LoadImageIntoTexture(new_texture);
-    
-//     foreach (string file in files){
-//           //Do work on the files here
-//           Debug.Log(file);
-//     }
+    foreach (string file in files){
+        //Do work on the files here
+        Debug.Log(file);
+        WWW www = new WWW("file://" + file);
+        yield return www;
+        Texture2D new_texture = new Texture2D(512,512); 
+        www.LoadImageIntoTexture(new_texture);
+    }
     
 //     string[] filePaths = Directory.GetFiles(@"P:\dd-pipeline\Icons\", "*.png"); // get every file in chosen directory with the extension.png
     // write those files out so I can see them
