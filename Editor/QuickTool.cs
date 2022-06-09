@@ -48,9 +48,9 @@ public class QuickTool : EditorWindow
 
     // Icon's path in our project.
     // var iconPath = "Icons/" + button.parent.name + "_icon";
-    var iconPath = "P:/dd-pipeline/Icons/viola_icon";
+    var iconPath = "P:/dd-pipeline/Icons/";
     
-    var info = new DirectoryInfo(path);
+    var info = new DirectoryInfo(iconpath);
     var fileInfo = info.GetFiles();
     for (file in fileInfo) print (file);
     
