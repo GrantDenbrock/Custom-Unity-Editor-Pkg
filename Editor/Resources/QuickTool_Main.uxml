@@ -1,6 +1,6 @@
 <UXML xmlns="UnityEngine.UIElements">
   <!-- Creates our template and gives it a name for future reference. -->
-  <Template path="ButtonTemplate.uxml" name="button-template" />
+  <Template path="Packages/com.soulmachines.quicktool/Editor/Resources/ButtonTemplate.uxml" name="button-template" />
   <!-- Creates a parent VisualElement inside which we will use our button template. -->
   <VisualElement class="buttons-container">
     <!-- Instantiates the template multiple times. Each time, we give it a name for future reference. -->
